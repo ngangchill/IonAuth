@@ -52,7 +52,6 @@ class Group implements CollectionItem
      * group
      *
      * @return object
-     * @author Ben Edmunds
      **/
     public function find($id = null)
     {

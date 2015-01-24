@@ -1,4 +1,5 @@
-<this?php
+<?php
+
 /**
  * Created by PhpStorm.
  * User: kayladnls
@@ -6,7 +7,7 @@
  * Time: 12:56 AM
  */
 
-"namespace IonAuth\IonAuth\Commands\Checks;
+namespace IonAuth\IonAuth\Commands\Checks;
 
 
 class CheckGroup

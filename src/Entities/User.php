@@ -33,7 +33,7 @@ class User implements CollectionItem
 
     /**
      * logged_in
-     * -----------------
+     *
      * @return bool
      **/
     public function loggedIn()
@@ -44,7 +44,7 @@ class User implements CollectionItem
 
     /**
      * is admin
-     * ---------------------
+     *
      * @param bool $id
      * @return bool
      */
@@ -60,9 +60,8 @@ class User implements CollectionItem
 
     /**
      * in group
-     * --------------------------
-     * @param mixed group(s) to check
      *
+     * @param mixed group(s) to check
      * @return bool
      **/
     public function inGroup(Group $group)
@@ -72,7 +71,7 @@ class User implements CollectionItem
 
     /**
      * Function is TimeLockedOut()
-     * ---------------------------------------------------------------------
+     *
      * Get a boolean to determine if an account should be locked out due to
      * exceeded login attempts within a given period
      *
