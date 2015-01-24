@@ -55,7 +55,7 @@ class LoginAttempt implements CollectionItem
 
             return $this->db->delete($this->tables['loginAttempts']);
         }
-        
+
         return false;
     }
 
@@ -94,8 +94,8 @@ class LoginAttempt implements CollectionItem
         if ($this->config->get('trackLoginAttempts')) {
             $ipAddress = $this->_prepareIp($_SERVER['REMOTE_ADDR']);
 
-            $this->db->select_max('time');
-            $this->db->where('ip_address', $ipAddress);
+            $this->db->select_max('time')
+              ->where('ip_address', $ipAddress);
 
             if (strlen($identity) > 0) {
                 $this->db->or_where('login', $identity);

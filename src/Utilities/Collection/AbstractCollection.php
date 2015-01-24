@@ -66,7 +66,7 @@ class AbstractCollection implements \Countable, \ArrayAccess
     /**
      * count
      *
-     * @return
+     * @return integer
      */
     public function count()
     {
